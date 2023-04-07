@@ -67,7 +67,7 @@ export default function Home() {
       <Page title="Pinger">
         <div id="page-container" className='duration-1000'>
           <Navbar></Navbar>
-          <Form action="/api/runping" method="post" formData={formData} submitInputValue="Let's ping" onClick={async (e)=>{await handleSumbmit(e)}}></Form>
+          <Form action="/api/runPings" method="post" formData={formData} submitInputValue="Let's ping" onClick={async (e)=>{await handleSumbmit(e)}}></Form>
           <Listpings limit={true}></Listpings>
         </div>
       </Page>
